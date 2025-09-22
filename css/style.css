@@ -1,0 +1,95 @@
+@import "reset.css";
+
+/*
+.####.##....##.########..########.##.....##
+..##..###...##.##.....##.##........##...##.
+..##..####..##.##.....##.##.........##.##..
+..##..##.##.##.##.....##.######......###...
+..##..##..####.##.....##.##.........##.##..
+..##..##...###.##.....##.##........##...##.
+.####.##....##.########..########.##.....##
+*/
+.main__container {
+  background: url("../assets/img/fondosillin.avif") center center/cover
+    no-repeat;
+  width: 100dvw;
+  height: 100dvh;
+  /* max-width: 390px; */
+  padding-top: 4rem;
+ display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10rem; 
+}
+.main__links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--gap__small);
+}
+.catalogo__link,
+.contacto__link {
+  color: var(--color__btn);
+  background-color: var(--bg_primary_btn);
+  padding: var(--padding__small);
+  border-radius: var(--border__radius);
+  font-size: var(--font__size-L);
+  cursor: pointer;
+}
+.catalogo__link span {
+  margin-right: 0.625rem;
+  font-size: var(--font__size-S);
+}
+
+/*
+..######.....###....########....###....##........#######...######..
+.##....##...##.##......##......##.##...##.......##.....##.##....##.
+.##........##...##.....##.....##...##..##.......##.....##.##.......
+.##.......##.....##....##....##.....##.##.......##.....##.##...####
+.##.......#########....##....#########.##.......##.....##.##....##.
+.##....##.##.....##....##....##.....##.##.......##.....##.##....##.
+..######..##.....##....##....##.....##.########..#######...######..
+*/
+
+.header__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  place-items: center;
+}
+.banner__catalogo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.3rem;
+}
+
+.item__catalogo {
+  display: flex;
+  max-width: 300px;
+  margin-inline: auto;
+}
+.titulo {
+  margin-bottom: 0.4rem;
+}
+.parrafo {
+  margin-bottom: 1rem;
+}
+
+/*
+..######...#######..##....##.########....###.....######..########..#######.
+.##....##.##.....##.###...##....##......##.##...##....##....##....##.....##
+.##.......##.....##.####..##....##.....##...##..##..........##....##.....##
+.##.......##.....##.##.##.##....##....##.....##.##..........##....##.....##
+.##.......##.....##.##..####....##....#########.##..........##....##.....##
+.##....##.##.....##.##...###....##....##.....##.##....##....##....##.....##
+..######...#######..##....##....##....##.....##..######.....##.....#######.
+*/
+
+.banner__contact {
+  display: flex;
+  justify-content: center;
+}
+iframe{ 
+        display: flex;
+        margin-inline: auto;  
+}
+
