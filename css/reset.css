@@ -26,7 +26,13 @@ a{
 
 body{
     width: 100dvw;
+    max-width: 1200px;
+    margin-inline: auto;
     min-height: 100dvh;
     font-family: var(--font__family);
     overflow-x: hidden;
+}
+
+.container-index{
+    background: radial-gradient(cyan, rgb(169, 169, 227));
 }

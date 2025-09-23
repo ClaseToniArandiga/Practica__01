@@ -11,21 +11,41 @@
 */
 .main__container {
   background: url("../assets/img/fondosillin.avif") center center/cover
-    no-repeat;
-  width: 100dvw;
+    no-repeat; 
   height: 100dvh;
-  /* max-width: 390px; */
   padding-top: 4rem;
- display: flex;
+  display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 10rem; 
+  gap: 10rem;
 }
 .main__links {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: var(--gap__small);
+}
+@media (min-width: 496px) {
+  .main__container {
+    background: radial-gradient(cyan, rgb(169, 169, 227));
+  }
+}
+
+/*
+..######.....###....########....###....##........#######...######..
+.##....##...##.##......##......##.##...##.......##.....##.##....##.
+.##........##...##.....##.....##...##..##.......##.....##.##.......
+.##.......##.....##....##....##.....##.##.......##.....##.##...####
+.##.......#########....##....#########.##.......##.....##.##....##.
+.##....##.##.....##....##....##.....##.##.......##.....##.##....##.
+..######..##.....##....##....##.....##.########..#######...######..
+*/
+
+.main__catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  justify-content: center;
+  align-items: start;
 }
 .catalogo__link,
 .contacto__link {
@@ -40,16 +60,6 @@
   margin-right: 0.625rem;
   font-size: var(--font__size-S);
 }
-
-/*
-..######.....###....########....###....##........#######...######..
-.##....##...##.##......##......##.##...##.......##.....##.##....##.
-.##........##...##.....##.....##...##..##.......##.....##.##.......
-.##.......##.....##....##....##.....##.##.......##.....##.##...####
-.##.......#########....##....#########.##.......##.....##.##....##.
-.##....##.##.....##....##....##.....##.##.......##.....##.##....##.
-..######..##.....##....##....##.....##.########..#######...######..
-*/
 
 .header__container {
   display: grid;
@@ -88,8 +98,15 @@
   display: flex;
   justify-content: center;
 }
-iframe{ 
-        display: flex;
-        margin-inline: auto;  
+iframe {
+  display: flex;
+  margin-inline: auto;
+}
+
+@media (min-width: 496px) {
+  .container-contact,
+  .container-catalogo {
+    background: radial-gradient(rgb(176, 175, 175), rgb(96, 95, 95));
+  }
 }
 
